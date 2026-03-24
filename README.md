@@ -1,7 +1,5 @@
-# DBMS-EXP-01
-
-## Commands
-
+# <center>Experiment No.1 
+~~~sql
 SHOW DATABASES;
 
 CREATE DATABASE company_db;
