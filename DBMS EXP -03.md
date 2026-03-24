@@ -28,8 +28,6 @@ ORDER BY SAL DESC;
 
 ### Problem 2: Employees Whose Name is 5 Letters, Starts with 'A' and Ends with 'N'
 
-**Objective:** Use pattern matching to find employees with specific name format.
-
 ```sql
 SELECT JOB, DEPTNO
 FROM EMPLOYEE
@@ -51,8 +49,6 @@ WHERE ENAME LIKE 'A___N';
 ---
 
 ### Problem 3: Display Names of Employees Whose Name Starts with 'S'
-
-**Objective:** Find employees whose name begins with the letter 'S'.
 
 ```sql
 SELECT ENAME
@@ -76,8 +72,6 @@ WHERE ENAME LIKE 'S%';
 
 ### Problem 4: Display Names of Employees Whose Name Ends with 'S'
 
-**Objective:** Find employees whose name ends with the letter 'S'.
-
 ```sql
 SELECT ENAME
 FROM EMPLOYEE
@@ -100,8 +94,6 @@ WHERE ENAME LIKE '%S';
 ---
 
 ### Problem 5: Employees in Department 10/20/40 OR Working as Clerk/Salesman/Analyst
-
-**Objective:** Use compound conditions with `OR` and `IN` operators.
 
 ```sql
 SELECT ENAME
@@ -137,8 +129,6 @@ OR JOB IN ('CLERK', 'SALESMAN', 'ANALYST');
 
 ### Problem 6: Employees Who Earn Commission
 
-**Objective:** Find employees with non-null and positive commission values.
-
 ```sql
 SELECT EMPNO, ENAME
 FROM EMPLOYEE
@@ -162,8 +152,6 @@ AND COMM > 0;
 ---
 
 ### Problem 7: Display Employee Number and Total Salary (Salary + Commission)
-
-**Objective:** Calculate total salary including commission using `IFNULL()` function.
 
 ```sql
 SELECT EMPNO, (SAL + IFNULL(COMM, 0)) AS TOTAL_SALARY
@@ -202,8 +190,6 @@ FROM EMPLOYEE;
 
 ### Problem 8: Display Employee Number and Annual Salary
 
-**Objective:** Calculate annual salary (monthly salary × 12).
-
 ```sql
 SELECT EMPNO, (SAL * 12) AS ANNUAL_SALARY
 FROM EMPLOYEE;
@@ -236,8 +222,6 @@ FROM EMPLOYEE;
 
 ### Problem 9: Clerks Earning More Than 3000
 
-**Objective:** Find clerks with salary greater than 3000.
-
 ```sql
 SELECT ENAME
 FROM EMPLOYEE
@@ -253,8 +237,6 @@ Empty set (0.001 sec)
 ---
 
 ### Problem 10: Clerks, Salesmen, or Analysts Earning More Than 3000
-
-**Objective:** Find employees in specific jobs earning more than 3000.
 
 ```sql
 SELECT ENAME
