@@ -51,9 +51,3 @@ SELECT ENAME, DEPTNO
 FROM EMPLOYEE
 WHERE ENAME LIKE 'M%';
 ~~~
-### 5. List the Employee name, Employee numbers and department of all clerks. 
-~~~sql
-SELECT ENAME, EMPNO, DEPTNO
-FROM EMPLOYEE
-WHERE JOB = 'CLERK';
-~~~
