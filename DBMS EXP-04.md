@@ -8,7 +8,7 @@ WHERE HIREDATE < '1980-06-30'
    OR HIREDATE > '1981-12-31';
 ```
 
-**Corrected Output:**
+**Output:**
 ```
 +-------+--------+---------+------+------------+------+------+--------+
 | EMPNO | ENAME  | JOB     | MGR  | HIREDATE   | SAL  | COMM | DEPTNO |
@@ -80,11 +80,6 @@ SELECT ENAME
 FROM EMPLOYEE
 WHERE ENAME LIKE '%A_';
 ```
-
-**Explanation:** The pattern `%A_` means:
-- `%` = any sequence of characters (including empty)
-- `A` = the letter 'A' at the second last position
-- `_` = exactly one character (the last character)
 
 **Output:**
 ```
