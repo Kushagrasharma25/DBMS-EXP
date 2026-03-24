@@ -46,6 +46,7 @@ INSERT INTO EMPLOYEE VALUES
 (7902,'FORD','ANALYST',7566,'1981-12-03',3000,NULL,20),
 (7934,'MILLER','CLERK',7782,'1982-01-23',1300,NULL,10);
 
+~~~sql
 ### 1. Create Employee_master table with data using Employee.
 ~~~sql
 CREATE TABLE EMPLOYEE_MASTER
